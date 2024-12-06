@@ -1,0 +1,131 @@
+body {
+    /* Reset margins and padding */
+    margin: 0;
+    padding: 0;
+
+    /* Use a universal box-sizing rule to make layout calculations easier */
+    box-sizing: border-box;
+
+    position: relative;
+    
+    font-family:sans-serif;
+    
+    /* Set a default font family and fallback fonts for better readability */
+
+    /* Set a base font size */
+    font-size: 16px;
+
+    /* Make the body take up the full viewport height */
+    min-height: 100vh;
+
+    /* Set the background color or gradient */
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4); /* Pink to peach */
+    /* Ensure text color contrasts well with the background */
+    color: #333;
+
+
+    /* Smooth out font rendering for better readability */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Aesthetic smooth scrolling */
+    scroll-behavior: smooth;
+    
+}
+
+
+.weatherbox{
+    width: 350px;
+    height: 100px;
+    position:absolute;
+    bottom: 80px;
+    right: 100px;
+    display: grid;
+    grid-template-columns: 70px 140px 100px ;
+    grid-template-rows: 50px  25px  15px ; 
+}
+
+
+.cloud{
+    width: 100px;
+    position: absolute;
+    right: 36px;
+    top: -10px;
+}
+
+.celsius{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/ 1 /4 /1;
+}
+
+#item{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.city{
+    display: flex;
+    justify-content:center;
+    align-items:end;
+    font-size: 30px;
+    color: white;
+    
+}
+
+
+.time{
+    grid-area: 2/ 2 /4 /2;
+    font-size: 12px;
+}
+.metainfo {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 400px;
+    background-color: #ff9a9e;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);;
+}
+
+.search{
+    margin-left: 15%;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 5px;
+    height:27px ;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #ff9a9e;
+}
+
+
+.item1box{
+    margin-left: 15%;
+    color: white;
+    font-size: 22px;
+    margin-top: 50px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.max{
+    margin-top: 50px;
+}
+
+
+.humidity{
+    margin-top: 50px;
+}
+
+
+
+
+
+
